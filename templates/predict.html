@@ -28,16 +28,17 @@
 
   <section id="Main">
     <a href="{{ url_for( 'index' ) }}">
-      <h3>Flight Price Prediction</h3>
+        <h3>Air Fare Prediction</h3>
     </a>
     <div>
-      <ul id="navbar">
-        <li><a href="{{ url_for( 'index' ) }}">HOME</a></li>
-        <li><a class="active" href="{{ url_for( 'predict' ) }}">PREDICTION</a></li>
-        <!-- <li><a href="#">OVERVIEW</a></li> -->
-      </ul>
+        <ul id="navbar">
+            <li><a  href="{{ url_for( 'index' ) }}">HOME</a></li>
+            <li><a class="active" href="{{ url_for( 'predict' ) }}">PREDICTION</a></li>
+            <!-- <li><a href="#">OVERVIEW</a></li> -->
+            <!-- <li><a href="#"><button class="btn success">CODE</button></a></li> -->
+        </ul>
     </div>
-  </section>
+</section>
 
 
   <!-- Predict -->
@@ -49,7 +50,7 @@
           <div class="col1">
             <div class="card">
               <div class="inputs">
-                <h5 class="title">Departure Date</h5>
+                <h5 class="title form-title">Departure Date</h5>
                 <input type="datetime-local" name="departure" id="departure" required="required">
               </div>
             </div>
@@ -57,7 +58,7 @@
 
             <div class="card">
               <div class="inputs">
-                <h5 class="title">Source</h5>
+                <h5 class="title form-title">Source</h5>
                 <select name="source" id="source select1" required="required" class="select1"
                   onchange="getSelectValue(this.value)">
                   <option value="Bangalore">Bangalore</option>
@@ -71,7 +72,7 @@
 
             <div class="card">
               <div class="inputs">
-                <h5 class="title">Stopage</h5>
+                <h5 class="title form-title">Stopage</h5>
                 <select name="stopage" required="required">
                   <option value="0">Non-Stop</option>
                   <option value="1">1</option>
@@ -87,7 +88,7 @@
           <div class="col2">
             <div class="card">
               <div class="inputs">
-                <h5 class="title">Arrival Date</h5>
+                <h5 class="title form-title">Arrival Date</h5>
                 <input type="datetime-local" name="arrival" id="arrival" required="required">
               </div>
             </div>
@@ -95,7 +96,7 @@
 
             <div class="card">
               <div class="inputs">
-                <h5 class="title">Destination</h5>
+                <h5 class="title form-title">Destination</h5>
                 <select name="destination" id="destination select2" required="required" class="select2">
                   <option value="Mumbai">Mumbai</option>
                   <option value="Delhi">Delhi</option>
@@ -109,7 +110,7 @@
 
             <div class="card">
               <div class="inputs">
-                <h5 class="title">Select Airline</h5>
+                <h5 class="title form-title">Select Airline</h5>
                 <select name="airline" id="airline" required="required" class="select2">
                   <option value="Vistara">Vistara</option>
                   <option value="Air India">Air India</option>
@@ -142,20 +143,21 @@
 
   <footer id="Footer">
 
-    <div class="footer">
-      <h3> Flight Price Prediction </h3>
+        <div class="footer">
+            <h3> Air Fare Prediction </h3>
 
-      <ul class="socials">
-        <li><a target="_blank" href="https://github.com/divya"><i class="fa fa-github"></i></a></li>
-        <li><a target="_blank" href="https://www.linkedin.com/in/divya/"><i class="fa fa-linkedin-square"></i></a></li>
-      </ul>
-    </div>
+            <ul class="socials">
+                <li><a target="_blank" href="https://github.com/divyat10"><i class="fa fa-github"></i></a></li>
+                <li><a target="_blank" href="https://www.linkedin.com/in/divyathakkar1618/"><i
+                            class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
 
-    <div class="last">
-      <p>A Machine learning flight price prediction web-application, build with flask & deployed using Heroku</p>
-    </div>
+        <div class="last">
+            <p>A Machine learning Air Fare Prediction web-application, build with flask & deployed using Render</p>
+        </div>
 
-  </footer>
+    </footer>
 
   <script>
     function getSelectValue(select1) {

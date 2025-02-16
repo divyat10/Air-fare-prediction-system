@@ -27,7 +27,7 @@
 
     <section id="Main">
         <a href="{{ url_for( 'index' ) }}">
-            <h3>Air Flight Price Prediction</h3>
+            <h3>Air Fare Prediction</h3>
         </a>
         <div>
             <ul id="navbar">
@@ -39,97 +39,164 @@
         </div>
     </section>
 
-    <section id="Front">
-        <div class="page">
-            <h2>Introduction</h2>
-            <p>The goal of the flight price prediction project is to develop a model that can accurately predict the
-                prices of airline tickets. This project utilizes data analysis, machine learning, and statistical
-                modeling techniques to analyze historical flight data and make predictions on future flight prices.</p>
-            <br>
-            <p>The flight price prediction project is aimed at helping travelers plan their trips more effectively by
-                providing insights into the potential price trends of flight tickets. This model predicts the price of
-                the flight based on some parameters like total stops, journey Day, journey month, Air India, Indigo,
-                source, destination, etc. We have trained this model using the random forest regressor and after
-                training, fine-tune the model which is also known as hyper parameter tuning. Then save a model and
-                deploy this Air Fare Prediction model using the Flask application on the localhost. The project aims to create a predictive model that can forecast flight prices with a high degree of accuracy. The flight price prediction project can provide valuable insights for travelers, travel agencies, and airlines to optimize their travel planning, pricing strategies.</p>
+    <section id="Front ">
+        <div class="page_container">
+            <!-- Left Side - Text Content -->
+            <div class="page_text-section">
+                <p>The goal of the Air Fare Prediction project is to develop a model that can accurately predict the
+                    prices of airline tickets. This project utilizes data analysis, machine learning, and statistical
+                    modeling techniques to analyze historical flight data and make predictions on future flight prices.</p>
+                <br>
+                <p>The Air Fare Prediction project is aimed at helping travelers plan their trips more effectively by
+                    providing insights into the potential price trends of flight tickets. This model predicts the price of
+                    the flight based on some parameters like total stops, journey day, journey month, airline, source, destination, etc. 
+                    We have trained this model using the random forest regressor and after
+                    training, fine-tuned the model through hyperparameter tuning. Then, the model is saved and deployed using a 
+                    Flask application on localhost.</p>
+            </div>
+    
+            <!-- Right Side - Image -->
+            <div class="page_image-section">
+                <img src="https://images.unsplash.com/photo-1519666336592-e225a99dcd2f?q=80&w=2488&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Air Fare Prediction">
+            </div>
         </div>
     </section>
 
 
-    <center>
-        <section id="Model">
-            <div class="acc">
-                <h1>Performance metrics </h1>
-                <table>
-                    <tr>
-                        <th>Model accuracy</th>
-                        <th>Percentages</th>
-                    </tr>
-                    <tr>
-                        <th>ExtratreeRegressor</th>
-                        <th>93.70%</th>
-                    </tr>
-                    <tr>
-                        <th>Linear Regression</th>
-                        <th>72.00%</th>
-                    </tr>
-                    <tr>
-                        <th>XGBoost</th>
-                        <th>82.00%</th>
-                    </tr>
-                    <tr>
-                        <th>Random Forest Regressor</th>
-                        <th>93.80%</th>
-                    </tr>
-                </table>
-            </div>
+    <div class="page_table-container">
+        <!-- First Table -->
+        <div class="page_table-box">
+            <h2 class="page_table-title">Model Accuracy</h2>
+            <table class="page_table">
+                <tr>
+                    <th>Model</th>
+                    <th>Accuracy (%)</th>
+                </tr>
+                <tr>
+                    <td>ExtraTree Regressor</td>
+                    <td>93.70%</td>
+                </tr>
+                <tr>
+                    <td>Linear Regression</td>
+                    <td>72.00%</td>
+                </tr>
+                <tr>
+                    <td>XGBoost</td>
+                    <td>82.00%</td>
+                </tr>
+                <tr>
+                    <td>Random Forest Regressor</td>
+                    <td>93.80%</td>
+                </tr>
+            </table>
+        </div>
 
-            <div class="acc-style">
-                <h1></h1>
-                <table>
-                    <tr>
-                        <th>r2_Score</th>
-                        <th>Score</th>
-                    </tr>
-                    <tr>
-                        <th>ExtratreeRegressor</th>
-                        <th>0.89</th>
-                    </tr>
-                    <tr>
-                        <th>Linear Regression</th>
-                        <th>0.37</th>
-                    </tr>
-                    <tr>
-                        <th>XGBoost</th>
-                        <th>0.60</th>
-                    </tr>
-                    <tr>
-                        <th>Random Forest Regressor</th>
-                        <th>0.90</th>
-                    </tr>
-                </table>
+        <!-- Second Table -->
+        <div class="page_table-box">
+            <h2 class="page_table-title">R² Score</h2>
+            <table class="page_table">
+                <tr>
+                    <th>Model</th>
+                    <th>Score</th>
+                </tr>
+                <tr>
+                    <td>ExtraTree Regressor</td>
+                    <td>0.89</td>
+                </tr>
+                <tr>
+                    <td>Linear Regression</td>
+                    <td>0.37</td>
+                </tr>
+                <tr>
+                    <td>XGBoost</td>
+                    <td>0.60</td>
+                </tr>
+                <tr>
+                    <td>Random Forest Regressor</td>
+                    <td>0.90</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+      <!-- FAQ Section -->
+      <div class="page_faq-container">
+        <h2 class="page_faq-title">Frequently Asked Questions (FAQs)</h2>
+
+        <div class="page_faq-item">
+            <div class="page_faq-question">
+                What is the purpose of this project?
+                <i class="fas fa-chevron-down"></i>
             </div>
-        </section>
-    </center>
+            <div class="page_faq-answer">
+                The goal of this project is to predict airline ticket prices using machine learning models, helping travelers plan their trips efficiently.
+            </div>
+        </div>
+
+        <div class="page_faq-item">
+            <div class="page_faq-question">
+                Which models are used in this project?
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="page_faq-answer">
+                The models used include ExtraTree Regressor, Linear Regression, XGBoost, and Random Forest Regressor.
+            </div>
+        </div>
+
+        <div class="page_faq-item">
+            <div class="page_faq-question">
+                How accurate is the best model?
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="page_faq-answer">
+                The Random Forest Regressor achieves the highest accuracy of 93.80% with an R² score of 0.90.
+            </div>
+        </div>
+
+        <div class="page_faq-item">
+            <div class="page_faq-question">
+                How is this model deployed?
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="page_faq-answer">
+                The model is deployed using Flask on a local server to provide real-time fare predictions.
+            </div>
+        </div>
+    </div>
+
+   
+
 
     <footer id="Footer">
 
         <div class="footer">
-            <h3> Flight Price Prediction </h3>
+            <h3> Air Fare Prediction </h3>
 
             <ul class="socials">
-                <li><a target="_blank" href="https://github.com/divya"><i class="fa fa-github"></i></a></li>
-                <li><a target="_blank" href="https://www.linkedin.com/in/divya/"><i
+                <li><a target="_blank" href="https://github.com/divyat10"><i class="fa fa-github"></i></a></li>
+                <li><a target="_blank" href="https://www.linkedin.com/in/divyathakkar1618/"><i
                             class="fa fa-linkedin-square"></i></a></li>
             </ul>
         </div>
 
         <div class="last">
-            <p>A Machine learning flight price prediction web-application, build with flask & deployed using Render</p>
+            <p>A Machine learning Air Fare Prediction web-application, build with flask & deployed using Render</p>
         </div>
 
     </footer>
+    <script>
+        // FAQ Toggle Functionality
+        document.querySelectorAll('.page_faq-question').forEach(item => {
+            item.addEventListener('click', () => {
+                const parent = item.parentNode;
+                parent.classList.toggle('active');
+            });
+        });
+    </script>
+
+
 
 </body>
+
 
 </html>

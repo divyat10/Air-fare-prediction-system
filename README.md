@@ -1,8 +1,16 @@
 # Flight-Fare-Prediction
 ![Scraped](https://img.shields.io/badge/Dataset-Web_sraping-blue.svg) ![Python 3.10](https://img.shields.io/badge/Python-3.10-brightgreen.svg) ![Scikit-learn](https://img.shields.io/badge/Library-Scikit_Learn-orange.svg) ![Flask](https://img.shields.io/badge/Framework-Flask-black.svg)
 
-> A Flight price prediction application that predicts fares of flights for a particular date based on various parameters like Source, Destination, Stops & Airline. Data used in this project is scraped from an online ticket booking website 'Ease my Trip' using a Python module name BeautifulSoup. The dataset goes through Data Cleaning, Data Wrangling, and Exploratory Data Analysis which gives insights about the data and later uses Machine Learning techniques to train the data for prediction.
-It is a regression problem that is solved using RandomForestRegressor ML Algorithm which generates accurate results for price prediction. A web application is created using Flask through which users can interact and get accurate predictions of flight fares.
+>A flight price prediction application is developed to estimate airfare for a specific date based on various factors such as source, destination, number of stops, and airline. This project utilizes a Kaggle dataset, which undergoes data cleaning, wrangling, and exploratory data analysis to derive valuable insights. Machine learning techniques are then applied to train the model for price prediction. The problem is approached as a regression task, with the RandomForestRegressor algorithm providing accurate fare estimates. A Flask-based web application enables users to interact with the system and obtain precise flight fare predictions.
+
+## Features:
+
+-Departure and arrival dates.
+-Source (Four destinations selected for this project).
+-Destination (Four destinations selected for this project).
+-Total number of stops.
+-Selected airlines
+-Price (Target variable)
 
 ## Models with their Accuracy of Prediction
 
@@ -13,19 +21,10 @@ It is a regression problem that is solved using RandomForestRegressor ML Algorit
 | ExtraTreeReressor        | 93.70%   |
 | Random Forest            | 93.70%   |
 
-## Features:
-
-- Departure & Arrival Date
-- Source (4 Destinations were selected for this project)
-- Destination (4 Destinations were selected for this project)
-- Total stops
-- Selected Airlines
-- Price (Target)
 
 ## NOTE
 
 > You can access the website live at: https://flight-fare-prediction-i1mr.onrender.com/ <br>
-Python version 3.10.9 was used for the whole project.<br>
 
 ## Steps to run this application in your system
 
