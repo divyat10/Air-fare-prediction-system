@@ -43,16 +43,9 @@
         <div class="page_container">
             <!-- Left Side - Text Content -->
             <div class="page_text-section">
-                <p>The goal of the Air Fare Prediction project is to develop a model that can accurately predict the
-                    prices of airline tickets. This project utilizes data analysis, machine learning, and statistical
-                    modeling techniques to analyze historical flight data and make predictions on future flight prices.</p>
+                <p>The objective of the Air Fare Prediction project is to build a model capable of accurately forecasting airline ticket prices. This project leverages data analysis, machine learning, and statistical modeling techniques to examine past flight data and predict future airfare trends.</p>
                 <br>
-                <p>The Air Fare Prediction project is aimed at helping travelers plan their trips more effectively by
-                    providing insights into the potential price trends of flight tickets. This model predicts the price of
-                    the flight based on some parameters like total stops, journey day, journey month, airline, source, destination, etc. 
-                    We have trained this model using the random forest regressor and after
-                    training, fine-tuned the model through hyperparameter tuning. Then, the model is saved and deployed using a 
-                    Flask application on localhost.</p>
+                <p>TThe Air Fare Prediction project is designed to assist travelers in better planning their trips by offering insights into potential flight price trends. The model estimates airfare based on various factors such as the number of stops, travel day, travel month, airline, departure location, and destination. It has been trained using a Random Forest Regressor and further optimized through hyperparameter tuning. Once trained, the model is saved and deployed via a Flask application on a local server.</p>
             </div>
     
             <!-- Right Side - Image -->
@@ -125,41 +118,31 @@
 
         <div class="page_faq-item">
             <div class="page_faq-question">
-                What is the purpose of this project?
+                1.	What information is needed to operate the system?
                 <i class="fas fa-chevron-down"></i>
             </div>
             <div class="page_faq-answer">
-                The goal of this project is to predict airline ticket prices using machine learning models, helping travelers plan their trips efficiently.
+                To produce forecasts, the system needs information such as the airline name, departure date, number of stops, source, and destination.
             </div>
         </div>
 
         <div class="page_faq-item">
             <div class="page_faq-question">
-                Which models are used in this project?
+                2.	Is it possible for the system to forecast prices in real time?
                 <i class="fas fa-chevron-down"></i>
             </div>
             <div class="page_faq-answer">
-                The models used include ExtraTree Regressor, Linear Regression, XGBoost, and Random Forest Regressor.
+                At the moment, the system makes forecasts based on previous data. It can be expanded to operate with real-time airline data, though.
             </div>
         </div>
 
         <div class="page_faq-item">
             <div class="page_faq-question">
-                How accurate is the best model?
+                3.	How precise are the forecasts?
                 <i class="fas fa-chevron-down"></i>
             </div>
             <div class="page_faq-answer">
-                The Random Forest Regressor achieves the highest accuracy of 93.80% with an R² score of 0.90.
-            </div>
-        </div>
-
-        <div class="page_faq-item">
-            <div class="page_faq-question">
-                How is this model deployed?
-                <i class="fas fa-chevron-down"></i>
-            </div>
-            <div class="page_faq-answer">
-                The model is deployed using Flask on a local server to provide real-time fare predictions.
+                The model's performance and the quality of the data determine the accuracy. Based on past data, the Random Forest Regressor offers a high accuracy rate.
             </div>
         </div>
     </div>
@@ -180,7 +163,7 @@
         </div>
 
         <div class="last">
-            <p>A Machine learning Air Fare Prediction web-application, build with flask & deployed using Render</p>
+            <p>A web application for Air Fare Prediction powered by machine learning, developed using Flask, and deployed on Render.</p>
         </div>
 
     </footer>
